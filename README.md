@@ -196,12 +196,12 @@ Table: UserDetails
 - Hasta este punto sólo se tiene acceso a la aplicación web. Traté un LOAD_FILE a través de SQLi pero no funcionó.
 - Había algo peculiar en la página "MANAGE", hablaban de un FILE que no existe. Tocaba probar por todos los métodos con ese parámetro.
 
-<img src="https://github.com/El-Palomo/DC-9/blob/main/dc9_17jpg" width=80% />
+<img src="https://github.com/El-Palomo/DC-9/blob/main/dc9_17.jpg" width=80% />
 
 - Al final encontramos LFI y ya podemos leer archivos del servidor. Alguno debe tener algo que me sirva para obtener consola.
 - Con ayuda del BURP y este listado: https://github.com/hussein98d/LFI-files/blob/master/list.txt podemos buscar archivos importantes.
 
-<img src="https://github.com/El-Palomo/DC-9/blob/main/dc9_18jpg" width=80% />
+<img src="https://github.com/El-Palomo/DC-9/blob/main/dc9_18.jpg" width=80% />
 
 - De todos los archivos que aparecen en la imagen superior el que llama la atención es /etc/knockd.conf
 - PORT KNOCKING es una manera de esconder puertos. Se puede abrir un puerto si es que se "toca" de manera correcta los puertos en el servidor.
